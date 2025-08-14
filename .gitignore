@@ -1,29 +1,44 @@
+# =========================
 # Node dependencies
-node_modules/
+# =========================
+frontend/node_modules/
+backend/node_modules/
 bower_components/
 jspm_packages/
 web_modules/
 
-# Backend & frontend node_modules explicitly
-backend/node_modules/
-frontend/node_modules/
+# =========================
+# Build outputs
+# =========================
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/.next/
+frontend/.nuxt/
+frontend/out/
+frontend/.vuepress/dist
+frontend/.temp/
+frontend/.svelte-kit/
+frontend/.vitepress/dist
+frontend/.vitepress/cache
 
+backend/dist/
+backend/build/
+backend/.cache/
+backend/.parcel-cache/
+backend/.next/
+backend/.nuxt/
+backend/out/
+backend/.vuepress/dist
+backend/.temp/
+backend/.svelte-kit/
+backend/.vitepress/dist
+backend/.vitepress/cache
 
-# Output / Build
-dist/
-build/
-.cache/
-.parcel-cache/
-.next/
-.nuxt/
-out/
-.vuepress/dist
-.temp/
-.svelte-kit/
-**/.vitepress/dist
-**/.vitepress/cache
-
+# =========================
 # Logs
+# =========================
 logs/
 *.log
 npm-debug.log*
@@ -31,36 +46,52 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# =========================
 # Environment files
+# =========================
 .env
 .env.*
 !.env.example
 
+# =========================
 # Runtime data
+# =========================
 pids/
 *.pid
 *.seed
 *.pid.lock
 
+# =========================
 # Diagnostic reports
+# =========================
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# =========================
 # Coverage
+# =========================
 coverage/
 .nyc_output/
 *.lcov
 
+# =========================
 # TypeScript
+# =========================
 *.tsbuildinfo
 
+# =========================
 # ESLint / Stylelint cache
+# =========================
 .eslintcache
 .stylelintcache
 
+# =========================
 # REPL & History
+# =========================
 .node_repl_history
 
+# =========================
 # NPM/Yarn
+# =========================
 .npm/
 *.tgz
 .yarn-integrity
@@ -72,7 +103,9 @@ coverage/
 !.yarn/sdks
 !.yarn/versions
 
+# =========================
 # Editor / IDE
+# =========================
 .vscode/
 .idea/
 .DS_Store
@@ -82,27 +115,24 @@ Thumbs.db
 *.njsproj
 *.sln
 
+# =========================
 # Testing / Dev tools
+# =========================
 .grunt/
 .fusebox/
-.tern-port
+.tern-port/
 .vscode-test/
 
+# =========================
 # Hosting / Cloud tools
+# =========================
 .serverless/
 .dynamodb/
 .firebase/
 .docusaurus/
 
+# =========================
 # Vite logs
+# =========================
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-
-# Large binaries (MongoDB / run-rs)
-backend/node_modules/run-rs/
-*.exe
-*.pdb
-
-# Git objects (optional, normally not necessary)
-.git/objects/
-
