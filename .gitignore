@@ -4,6 +4,10 @@ bower_components/
 jspm_packages/
 web_modules/
 
+# Backend & frontend node_modules explicitly
+backend/node_modules/
+frontend/node_modules/
+
 # Output / Build
 dist/
 build/
@@ -30,7 +34,6 @@ lerna-debug.log*
 .env
 .env.*
 !.env.example
-echo backend/node_modules/ >> .gitignore
 
 # Runtime data
 pids/
@@ -73,6 +76,10 @@ coverage/
 .idea/
 .DS_Store
 Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
 # Testing / Dev tools
 .grunt/
@@ -89,27 +96,12 @@ Thumbs.db
 # Vite logs
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-# Node modules
-node_modules/
 
-# Build outputs
-dist/
-build/
+# Large binaries (MongoDB / run-rs)
+backend/node_modules/run-rs/
+*.exe
+*.pdb
 
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Git objects (optional, normally not necessary)
+.git/objects/
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE files
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
