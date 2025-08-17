@@ -7,8 +7,8 @@ import { useRef, useState } from "react";
 
 export const Signin = () => {
 
-    const usernameRef = useRef<HTMLInputElement>();
-    const passwordRef = useRef<HTMLInputElement>()
+    const usernameRef = useRef<HTMLInputElement>(null);
+    const passwordRef = useRef<HTMLInputElement>(null)
     const navigate = useNavigate()
 
     const[err, setErr] = useState("")
