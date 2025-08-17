@@ -6,7 +6,6 @@ import { useEffect, useState } from "react"
 import { Users } from "../components/Users"
 import { useContent } from "../hooks/useContent";
 import { SendMoney } from "../components/SendMoney";
-import { CiSearch } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
 import { MdAccountBalance } from "react-icons/md";
