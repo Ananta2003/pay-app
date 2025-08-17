@@ -7,11 +7,11 @@ import { useNavigate } from "react-router-dom"
 
 export const Signup = () => {
 
-    const usernameRef = useRef<HTMLInputElement>()
-    const firstnameRef = useRef<HTMLInputElement>()
-    const lastnameRef = useRef<HTMLInputElement>()
-    const passwordRef = useRef<HTMLInputElement>()
-    const emailRef = useRef<HTMLInputElement>()
+    const usernameRef = useRef<HTMLInputElement>(null)
+    const firstnameRef = useRef<HTMLInputElement>(null)
+    const lastnameRef = useRef<HTMLInputElement>(null)
+    const passwordRef = useRef<HTMLInputElement>(null)
+    const emailRef = useRef<HTMLInputElement>(null)
     const navigate = useNavigate()
 
     const [err, setErr] = useState("")
