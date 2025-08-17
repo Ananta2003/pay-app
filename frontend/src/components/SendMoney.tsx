@@ -7,8 +7,8 @@ import { BACKEND_URL } from "../config";
 
 export const SendMoney = ({ open, onclose, onSuccess, }: any) => {
 
-    const amountRef = useRef<HTMLInputElement>()
-    const recieverRef = useRef<HTMLInputElement>()
+    const amountRef = useRef<HTMLInputElement>(null)
+    const recieverRef = useRef<HTMLInputElement>(null)
 
     const moneyTransfer = async () => {
         const amount = amountRef.current?.value;
